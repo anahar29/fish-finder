@@ -1,0 +1,49 @@
+# 2022 - 04 - 08
+# Alisha M.
+
+
+# Store user input
+depth_reading = 0
+
+# Breaking statement
+while (depth_reading != -1):
+  
+# Take user input for depth readings
+  depth_reading = int(input("Depth reading: "))
+  entry_one.append(depth_reading)
+  
+  depth_reading = int(input("Depth reading: "))
+  entry_two.append(depth_reading)
+  
+  depth_reading = int(input("Depth reading: "))
+  entry_three.append(depth_reading)
+  
+# Check for type of reading
+  if entry_one > entry_two > entry_three:
+    print()
+    print("Fish Diving")
+    print()
+  
+  elif entry_one < entry_two < entry_three:
+    print()
+    print("Fish Rising")
+    print()
+  
+  elif entry_one == entry_two == entry_three:
+    print()
+    print("Constant Depth")
+    print()
+    
+  else:
+    print()
+    print("No Fish")
+    print()
+    
+# Clear so it can loop repeatedly
+  entry_one = []
+  entry_two = []
+  entry_three = []  
+ 
+    
+print()
+print("All Done!")
